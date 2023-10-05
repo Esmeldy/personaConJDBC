@@ -10,6 +10,7 @@ public class TestPersonaDAO {
     public static void main(String[] args) {
         PersonaDao personaDAO = new PersonaDaoJDBC();
         PersonaDTO persona = new PersonaDTO(
+                7L,
                 "Luka",
                 "Modrid",
                 "lmod@Gmail.com",
@@ -17,7 +18,9 @@ public class TestPersonaDAO {
         );
 
         try {
-            personaDAO.insert(persona);
+            System.out.println("Borrando registro...");
+            int rows = personaDAO.delete(persona);
+            System.out.println("Filas afectadas... "+ rows);
         } catch (SQLException e) {
             System.out.println("Error en la BBDD"+ Arrays.toString(e.getStackTrace()));
         }
