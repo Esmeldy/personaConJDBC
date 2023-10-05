@@ -26,6 +26,13 @@
             <artifactId>password4j</artifactId>
             <version>1.7.3</version>
         </dependency>
+
+        <!--  Libreria para crear Poor de conexiones      -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
 </project>
