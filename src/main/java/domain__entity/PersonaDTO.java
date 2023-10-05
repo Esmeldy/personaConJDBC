@@ -1,20 +1,20 @@
 package domain__entity;
 
-public class Persona {
+public class PersonaDTO {
     private Long id;
     private String nombre;
     private String apellido;
     private String email;
     private String telefono;
 
-    public Persona() {
+    public PersonaDTO() {
     }
 
     /**
      * Para eliminar un registro por su ID solo necesitamos su Id
      * @param id
      */
-    public Persona(Long id) {
+    public PersonaDTO(Long id) {
         this.id = id;
     }
 
@@ -26,7 +26,7 @@ public class Persona {
      * @param email
      * @param telefono
      */
-    public Persona(String nombre, String apellido, String email, String telefono) {
+    public PersonaDTO(String nombre, String apellido, String email, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -41,7 +41,7 @@ public class Persona {
      * @param email
      * @param telefono
      */
-    public Persona(Long id, String nombre, String apellido, String email, String telefono) {
+    public PersonaDTO(Long id, String nombre, String apellido, String email, String telefono) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
